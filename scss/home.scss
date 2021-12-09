@@ -6,6 +6,7 @@
 body {
     background-color: #2C2C2C;
     color: #E4E4E4;
+    font-family: 'Arodora Pro';
     a {
         color: #E4E4E4;
         text-decoration: none;
@@ -24,6 +25,8 @@ body {
 }
 .home-header__text {  
     margin: 0px 15px; 
+    font-style: normal;
+    font-weight: normal;
     font-size: 18px;
     line-height: 18px;
     color: #FFFFFF;
@@ -40,6 +43,7 @@ body {
     font-size: 18px;
     line-height: 21px;
     list-style-type: none;  
+    color: #E4E4E4;
 }
 
 .gleb {
@@ -52,9 +56,11 @@ body {
     max-width: 450px;
 }
 .slogan__title {
+    font-family: 'NEXT ART';
     font-size: 48px;
     line-height: 54px;
     h1{
+        font-weight: bold;
         font-size: 72px;
     }
 
@@ -73,7 +79,10 @@ body {
 }   
     .button {
         background-color: #E2A300;
+        font-style: normal;
+        font-weight: bold;
         font-size: 18px;
+        line-height: 20px;
         margin-top: 27px;
         padding: 14px 40px;
         border-radius: 6px;
