@@ -1,6 +1,3 @@
-.about {
-    margin-top: 130px;
-}
 .about-item {
     display: flex;
     flex-wrap: wrap;
@@ -20,9 +17,15 @@
     font-size: 24px;
     line-height: 29px;
     color: #E4E4E4;
-
+    cursor: pointer;
+    
     &:hover, &:focus {
         background-color: rgba(0, 0, 0, 0.47);
+    }
+
+    img{
+        max-width: 75px;
+        max-height: 75px;
     }
 }
 
@@ -36,27 +39,27 @@
     width: 300px;
     height: 100px;
 }
-.about-desc__ellips {
+// .about-desc__ellips {
     
-}
-.ellips {
-}
+// }
+// .ellips {
+// }
 
-.glebs {
+// .glebs {
     
-}
-.about-desc__gleb1{
+// }
+// .about-desc__gleb1{
     
-}
-.about-desc__gleb2{
+// }
+// .about-desc__gleb2{
     
-}
-.about-desc__gleb3{
-}
+// }
+// .about-desc__gleb3{
+// }
 
-.glebs-outline {
+// .glebs-outline {
     
-}
+// }
 .about-desc__text {
     align-self: stretch;
     flex: 0 1 100px;
