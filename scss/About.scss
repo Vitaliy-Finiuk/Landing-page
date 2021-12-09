@@ -1,0 +1,73 @@
+.about {
+    margin-top: 130px;
+}
+.about-item {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin: 0px -15px;
+}
+.about-item__sills {
+    flex-basis: 270px;
+    height: 270px;
+    margin:0px 15px 30px 15px;
+    width: calc(25% - 30px);
+    background: #2A2A2A;
+    border-radius: 29px;
+    box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+    border: none;
+    transition: background-color 100ms ease-in-out;
+    font-size: 24px;
+    line-height: 29px;
+    color: #E4E4E4;
+
+    &:hover, &:focus {
+        background-color: rgba(0, 0, 0, 0.47);
+    }
+}
+
+.about-desc {
+    padding-top: 400px;
+    display: inline-flex;
+    flex-flow: column wrap;
+    justify-content: center;
+    align-items: flex-start;
+    align-content: flex-start;
+    width: 300px;
+    height: 100px;
+}
+.about-desc__ellips {
+    
+}
+.ellips {
+}
+
+.glebs {
+    
+}
+.about-desc__gleb1{
+    
+}
+.about-desc__gleb2{
+    
+}
+.about-desc__gleb3{
+}
+
+.glebs-outline {
+    
+}
+.about-desc__text {
+    align-self: stretch;
+    flex: 0 1 100px;
+    text-align: center;
+    justify-content: center;
+    width: 370px;
+    height: 690px;
+    font-size: 20px;
+    line-height: 24px;
+    background: #070707;
+    border-radius: 14px; 
+    z-index: 0;   
+}
+
