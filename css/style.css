@@ -1,0 +1,209 @@
+.home-header {
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  margin-top: 40px;
+}
+
+.home-header__logo {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-flex: 4;
+      -ms-flex: 4 0 auto;
+          flex: 4 0 auto;
+  -webkit-box-align: center;
+      -ms-flex-align: center;
+          align-items: center;
+}
+
+.home-header__text {
+  margin: 0px 15px;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 18px;
+  color: #ffffff;
+}
+
+.home-header__menu {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  -webkit-box-flex: 7;
+      -ms-flex: 7 0 auto;
+          flex: 7 0 auto;
+}
+
+.menu__link {
+  margin: 5px;
+  padding: 5px;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 auto;
+          flex: 0 1 auto;
+  font-size: 18px;
+  line-height: 21px;
+  list-style-type: none;
+  color: #e4e4e4;
+}
+
+.gleb {
+  -webkit-box-pack: justify;
+      -ms-flex-pack: justify;
+          justify-content: space-between;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: nowrap;
+      flex-wrap: nowrap;
+}
+
+.home-slogan {
+  max-width: 450px;
+}
+
+.home-slogan__gleb img {
+  width: 100%;
+  height: 100%;
+  -o-object-fit: scale-down;
+     object-fit: scale-down;
+}
+
+.slogan__title {
+  font-family: "NEXT ART";
+  font-size: 48px;
+  line-height: 54px;
+}
+
+.slogan__title h1 {
+  font-weight: bold;
+  font-size: 72px;
+}
+
+.slogan__text {
+  font-size: 18px;
+  line-height: 21px;
+}
+
+.button {
+  background-color: #e2a300;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 18px;
+  line-height: 20px;
+  margin-top: 27px;
+  padding: 14px 40px;
+  border-radius: 6px;
+  border: none;
+  cursor: pointer;
+}
+
+.button:hover, .button:focus {
+  background: linear-gradient(87.32deg, #e2a300 4.47%, #e29500 95.53%);
+  -webkit-box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+          box-shadow: 0px 2px 13px rgba(226, 158, 0, 0.48);
+}
+
+.about-item {
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
+  -ms-flex-wrap: wrap;
+      flex-wrap: wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  gap: 30px;
+}
+
+.about-item__sills {
+  -ms-flex-preferred-size: 270px;
+      flex-basis: 270px;
+  height: 270px;
+  width: calc(25% - 30px);
+  background: #2a2a2a;
+  border-radius: 29px;
+  -webkit-box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+          box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
+  border: none;
+  -webkit-transition: background-color 100ms ease-in-out;
+  transition: background-color 100ms ease-in-out;
+  font-size: 24px;
+  line-height: 29px;
+  color: #e4e4e4;
+  cursor: pointer;
+}
+
+.about-item__sills:hover, .about-item__sills:focus {
+  background-color: rgba(0, 0, 0, 0.47);
+}
+
+.about-item__sills img {
+  max-width: 75px;
+  max-height: 75px;
+}
+
+.about-desc {
+  padding-top: 400px;
+  display: -webkit-inline-box;
+  display: -ms-inline-flexbox;
+  display: inline-flex;
+  -webkit-box-orient: vertical;
+  -webkit-box-direction: normal;
+      -ms-flex-flow: column wrap;
+          flex-flow: column wrap;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 300px;
+  height: 100px;
+}
+
+.about-desc__text {
+  -ms-flex-item-align: stretch;
+      -ms-grid-row-align: stretch;
+      align-self: stretch;
+  -webkit-box-flex: 0;
+      -ms-flex: 0 1 100px;
+          flex: 0 1 100px;
+  text-align: center;
+  -webkit-box-pack: center;
+      -ms-flex-pack: center;
+          justify-content: center;
+  width: 370px;
+  height: 690px;
+  font-size: 20px;
+  line-height: 24px;
+  background: #070707;
+  border-radius: 14px;
+}
+
+.outline {
+  background: #2c2c2c;
+  border-radius: 14px;
+}
+
+.container {
+  max-width: 1170px;
+  margin: auto;
+}
+
+body {
+  background-color: #2C2C2C;
+  color: #E4E4E4;
+  font-family: 'Arodora Pro';
+}
+
+body a {
+  color: #E4E4E4;
+  text-decoration: none;
+}

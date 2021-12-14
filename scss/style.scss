@@ -1,0 +1,18 @@
+@import "_header";
+@import "_main";
+
+.container {
+    max-width: 1170px;
+    margin: auto;
+}
+
+body{
+    background-color: #2C2C2C;
+    color: #E4E4E4;
+    font-family: 'Arodora Pro';
+    
+    a {
+        color: #E4E4E4;
+        text-decoration: none;
+    }
+}
