@@ -1,23 +1,24 @@
-// .about {
-
-// }
+.about {
+  font-family: var(--main-font);
+}
 .about-item {
   display: flex;
   flex-wrap: wrap;
   justify-content: center;
   gap: 30px;
-
+  padding-top: 30px;
   &__sills {
-    flex-basis: 270px;
-    height: 270px;
+    flex-basis: 130px;
+    height: 130px;
     width: calc(25% - 30px);
     background: #2a2a2a;
     border-radius: 29px;
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
     border: none;
     transition: background-color 100ms ease-in-out;
-    font-size: 24px;
-    line-height: 29px;
+    font-weight: 300;
+    font-size: 16px;
+    line-height: 25px;
     color: #e4e4e4;
     cursor: pointer;
 
@@ -32,38 +33,61 @@
   }
 }
 .about-desc {
-  padding-top: 400px;
-  display: inline-flex;
-  flex-flow: column wrap;
-  justify-content: center;
-  width: 300px;
-  height: 100px;
-
-//   &__gleb1 {
-//   }
-
-//   &__gleb2 {
-//   }
+  padding-top: 120px;
 
   &__text {
-    align-self: stretch;
-    flex: 0 1 100px;
     text-align: center;
     justify-content: center;
-    width: 370px;
+    width: 360px;
     height: 690px;
     font-size: 20px;
     line-height: 24px;
-    background: #070707;
+    background: #2c2c2c;
     border-radius: 14px;
   }
 
-//   &__gleb3 {
-//   }
+  .glebs-outline {
+    max-width: 70%;
+  }
 }
-// .glebs-outline {
-// }
 .outline {
-  background: #2c2c2c;
   border-radius: 14px;
+}
+
+@media (min-width: 767px) {
+  .about-item {
+    &__sills {
+      flex-basis: 270px;
+      height: 270px;
+      font-size: 24px;
+      line-height: 29px;
+    }
+  }
+  .secondary-content {
+    display: flex;
+  }
+  .about-desc {
+    flex-direction: row;
+    display: flex;
+    width: 1224px;
+    height: 961px;
+
+    background: url("../Image/About/Ellips.svg") 50% no-repeat;
+
+    &__gleb2 {
+      padding-top: 220px;
+    }
+    &__gleb3 {
+      align-self: center;
+      width: 290px;
+      height: 430px;
+    }
+    &__ellips {
+      
+    }
+  }
+  .glebs-outline {
+    display: inline-flex;
+    flex-flow: column wrap;
+  }
 }

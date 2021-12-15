@@ -1,0 +1,35 @@
+.footer {
+    position: static;
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
+    flex: 1 1 auto;
+}
+.footer-menu {
+
+}
+.home-header {
+    margin-top: 18px;
+}
+.footer-helper{
+    flex: 0 1 auto;
+}
+.menu {
+
+		&__link {
+            margin: 18px;
+		}
+}
+.contacts-links{
+    margin: 18px 56px;
+}
+.home-header__logo{
+    flex-direction: column;
+}
+
+@media (min-width: 767px) {
+    .footer {
+        display: flex;
+        justify-content: space-between;
+    }
+}
