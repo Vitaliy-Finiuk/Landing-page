@@ -16,8 +16,8 @@
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
     border: none;
     transition: background-color 100ms ease-in-out;
-    font-weight: 300;
     font-size: 16px;
+    font-weight: 300;
     line-height: 25px;
     color: #e4e4e4;
     cursor: pointer;
@@ -34,10 +34,11 @@
 }
 .about-desc {
   padding-top: 120px;
+  justify-content: center;
+  
 
   &__text {
     text-align: center;
-    justify-content: center;
     width: 360px;
     height: 690px;
     font-size: 20px;
@@ -67,18 +68,14 @@
     display: flex;
   }
   .about-desc {
-    flex-direction: row;
-    display: flex;
-    width: 1224px;
     height: 961px;
-
+    
     background: url("../Image/About/Ellips.svg") 50% no-repeat;
 
     &__gleb2 {
       padding-top: 220px;
     }
     &__gleb3 {
-      align-self: center;
       width: 290px;
       height: 430px;
     }

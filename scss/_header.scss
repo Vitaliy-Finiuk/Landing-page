@@ -1,5 +1,6 @@
-// .home {
-// }
+.home {
+  font-family: var(--secondary-font);
+}
 .home-header {
   margin-top: 40px;
 
@@ -43,7 +44,6 @@
 .slogan {
   width: auto;
   &__title {
-    font-family: var(--secondary-font);
     font-size: 40px;
     line-height: 54px;
     h1 {
@@ -59,7 +59,6 @@
 }
 .button {
   background-color: #e2a300;
-  font-style: normal;
   font-weight: bold;
   font-size: 18px;
   line-height: 20px;
@@ -77,12 +76,12 @@
 
 @media (min-width: 767px) {
   .home-header {
-    display: flex;
     &__menu {
       display: flex;
       justify-content: space-between;
       flex: 7 0 auto;
     }
+    
   }
   .menu {
     &__link {
