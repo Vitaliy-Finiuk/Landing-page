@@ -1,9 +1,10 @@
 .home {
   font-family: var(--secondary-font);
+  height: 100vh;
 }
 
 .home-header {
-  margin: 0px;
+  margin-top: 0px;
   padding: 0;
   display: -webkit-box;
   display: -ms-flexbox;
@@ -63,6 +64,7 @@
 
 .home-slogan {
   max-width: 450px;
+  padding: 0px 15px;
 }
 
 .home-slogan__gleb img {
@@ -145,6 +147,9 @@
         -ms-flex-pack: start;
             justify-content: flex-start;
   }
+  .home-slogan {
+    padding: 200px 0px;
+  }
   .slogan__title {
     font-size: 48px;
   }
@@ -211,44 +216,45 @@ main {
           justify-content: center;
 }
 
-.about-desc .about-main {
-  margin: 30px 0px;
+.about-main {
+  padding: 30px 15px;
   text-align: center;
+  display: -webkit-box;
+  display: -ms-flexbox;
+  display: flex;
 }
 
-.about-desc .about-main .glebs-outline {
+.about-main .glebs-outline {
   max-width: 70%;
 }
 
-.about-desc .outline {
+.outline {
   border-radius: 14px;
 }
 
 @media (min-width: 767px) {
-  .about-desc .about-item__sills {
-    -ms-flex-preferred-size: 270px;
-        flex-basis: 270px;
+  .about-item__sills {
+    max-width: 270px;
     height: 270px;
     font-size: 24px;
     line-height: 29px;
   }
-  .about-desc .secondary-content {
+  .secondary-content {
     display: -webkit-box;
     display: -ms-flexbox;
     display: flex;
   }
-  .about-desc .about-desc {
+  .about-desc {
     height: 961px;
-    background: url("../Image/About/Ellips.svg") 50% no-repeat;
   }
-  .about-desc .about-desc__gleb2 {
+  .about-desc__gleb2 {
     padding-top: 220px;
   }
-  .about-desc .about-desc__gleb3 {
+  .about-desc__gleb3 {
     width: 290px;
     height: 430px;
   }
-  .about-desc .glebs-outline {
+  .glebs-outline {
     display: -webkit-inline-box;
     display: -ms-inline-flexbox;
     display: inline-flex;
@@ -269,9 +275,6 @@ main {
           flex: 1 1 auto;
 }
 
-.home-header {
-  margin-top: 18px;
-}
 
 .footer-helper {
   -webkit-box-flex: 0;
