@@ -1,5 +1,11 @@
 main {
   font-family: var(--main-font);
+}
+
+.home-bg {
+  background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
+}
+
 .about {
   font-family: var(--main-font);
 }
@@ -87,4 +93,5 @@ main {
     display: inline-flex;
     flex-flow: column wrap;
   }
+}
 }
