@@ -1,3 +1,5 @@
+main {
+  font-family: var(--main-font);
 .about {
   font-family: var(--main-font);
 }
@@ -8,8 +10,8 @@
   gap: 30px;
   padding-top: 30px;
   &__sills {
-    flex-basis: 130px;
-    height: 130px;
+    flex-basis: 80%;
+    height: 150px;
     width: calc(25% - 30px);
     background: #2a2a2a;
     border-radius: 29px;
@@ -38,14 +40,11 @@
   justify-content: center;
   
 
-  &__text {
-    text-align: center;
-    width: 360px;
-    height: 690px;
-    font-size: 20px;
-    line-height: 24px;
-    background: #2c2c2c;
-    border-radius: 14px;
+.about-main {
+  margin: 30px 0px;
+  text-align: center;
+  
+  &__gleb {
   }
 
   .glebs-outline {
