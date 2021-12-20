@@ -43,6 +43,62 @@
   padding: 0px;
 }
 
+.menu_icon {
+  z-index: 5;
+  display: block;
+  position: relative;
+  width: 30px;
+  height: 20px;
+  cursor: pointer;
+}
+
+.menu_icon span, .menu:before, .menu:after {
+  padding-top: 100px;
+  left: 0;
+  position: absolute;
+  height: 10%;
+  width: 100%;
+  -webkit-transition: all 0.3s ease 0s;
+  transition: all 0.3s ease 0s;
+  background-color: #ffffff;
+}
+
+.menu_icon:before, .menu_icon:after {
+  content: '';
+}
+
+.menu_icon:before {
+  top: 0;
+}
+
+.menu_icon:after {
+  bottom: 0;
+}
+
+.menu_icon span {
+  top: 50%;
+  -webkit-transform: scale(1) translate(0px, -50%);
+          transform: scale(1) translate(0px, -50%);
+}
+
+.menu_body {
+  position: fixed;
+  top: 0;
+  left: 0;
+  height: 100%;
+  width: 100%;
+  -webkit-transform: translate(-100%, 0px);
+          transform: translate(-100%, 0px);
+  background-color: #000000;
+  -webkit-transition: left 0.3s ease 0s;
+  transition: left 0.3s ease 0s;
+}
+
+.menu_body._active {
+  -webkit-transform: translate(0px, 0px);
+          transform: translate(0px, 0px);
+}
+
 .menu__link {
   margin: 15px;
   font-size: 18px;
@@ -131,6 +187,9 @@
     -webkit-box-flex: 7;
         -ms-flex: 7 0 auto;
             flex: 7 0 auto;
+  }
+  .menu_icon {
+    display: none;
   }
   .menu__link {
     margin: 5px;
@@ -275,6 +334,9 @@ main {
           flex: 1 1 auto;
 }
 
+.home-header {
+  margin-top: 18px;
+}
 
 .footer-helper {
   -webkit-box-flex: 0;
