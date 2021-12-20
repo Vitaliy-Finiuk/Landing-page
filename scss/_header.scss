@@ -3,18 +3,16 @@
   height: 100vh;
 }
 .home-header {
-  margin-top:0px;
   padding: 0;
   display: flex;
-  flex-direction: column;
   align-items: center;
-  
+
   &__logo {
+    flex-direction: column;
     display: flex;
-    flex: 4 0 auto;
     align-items: center;
   }
-  
+
   &__text {
     margin: 0px 15px;
     font-style: normal;
@@ -23,66 +21,12 @@
     line-height: 18px;
     color: #ffffff;
   }
-  
-  &__menu{
+
+  &__menu {
     padding: 0px;
   }
 }
-.menu {
 
-  &_icon {
-    z-index: 5;
-    display: block;
-    position: relative;
-    width: 30px;
-    height: 20px;
-    cursor: pointer;
-  } 
-  &_icon span, &:before,&:after{
-    padding-top: 100px;
-    left: 0;
-    position: absolute;
-    height: 10%;
-    width: 100%;
-    transition: all 0.3s ease 0s;
-    background-color: #ffffff;
-  }
-  &_icon {
-    &:before, &:after{
-      content: '';
-    }
-  }
-  &_icon {
-    &:before{
-      top: 0;
-    }
-  }
-  &_icon {
-    &:after{
-      bottom: 0;
-    }
-  } 
-
-  &_icon span{
-    top: 50%;
-    transform: scale(1) translate(0px, -50%);
-  }
-
-}
-
-.menu_body{
-  position: fixed;
-  top: 0;
-  left: 0;
-  height: 100%;
-  width: 100%;
-  transform: translate(-100%, 0px);
-  background-color: #000000;
-  transition: left 0.3s ease 0s;
-}
-.menu_body._active{
-  transform: translate(0px, 0px);
-}
 .menu {
   &__link {
     margin: 15px;
@@ -97,13 +41,17 @@
   justify-content: space-around;
   text-align: center;
   flex-wrap: wrap;
+  height: 100vh;
 }
 .home-slogan {
   max-width: 450px;
   padding: 0px 15px;
-  
-  &__gleb img {
+
+  &__gleb {
     width: 100%;
+    display: flex;
+    align-items: flex-end;
+    justify-content: center;
   }
 }
 .slogan {
@@ -116,7 +64,7 @@
       font-size: 38px;
     }
   }
-  
+
   &__text {
     font-size: 18px;
     line-height: 21px;
@@ -139,32 +87,23 @@
   }
 }
 
-
 @media (min-width: 767px) {
-  .home-header__logo{
-    flex-direction: row;
-  }
-
   .home-header {
-    flex-direction: row;
-    &__logo{
-     
+    &__logo {
+      flex-direction: row;
+      flex: 4 0 auto;
     }
     &__menu {
       display: flex;
       justify-content: space-between;
       flex: 7 0 auto;
     }
-    
   }
   .menu {
-
-		&_icon {
+    &_icon {
       display: none;
-		}
-}
-
-
+    }
+  }
 
   .menu {
     &__link {
@@ -179,13 +118,57 @@
     justify-content: flex-start;
   }
 
-  .home-slogan{
-    padding: 200px 0px;
+  .home-slogan {
+    padding-top: 200px;
   }
-  .slogan { 
-
+  .slogan {
     &__title {
       font-size: 48px;
     }
   }
+
+  .home-slogan {
+
+		&__gleb {
+      max-width: 632px;
+      height: 674.47px;
+		}
+}
+
+}
+
+@media (max-width: 767px) {
+  .menu {
+    &_icon {
+
+      z-index: 5;
+      display: block;
+      position: fixed;
+      cursor: pointer;
+      
+    }
+  } 
+  
+  .menu_body {
+    display: flex;
+    flex-direction: column;
+    position: fixed;
+    top: 0;
+    right: 0;
+    height: 100%;
+    width: 100%;
+    transform: translate(-100%, 0px);
+    background-color: #696664;
+    transition: left 0.3s ease 0s;
+  }
+  .menu_body._active {
+    transform: translate(0px, 0px);
+  }
+}
+.bar1, .bar2, .bar3 {
+  width: 35px;
+  height: 5px;
+  background-color: rgb(192, 25, 89);
+  margin: 6px 0;
+  transition: 0.4s;
 }

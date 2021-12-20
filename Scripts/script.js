@@ -6,4 +6,3 @@ if(menuIcon){
         menuBody.classList.toggle('_active');
     });
 }
-

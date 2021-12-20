@@ -23,7 +23,7 @@ const swiper = new Swiper('.swiper', {
         slidersPerView: 1,
       },
       778: {
-        slidersPerView:2,
+        slidersPerView:3,
       }
     },
   });
