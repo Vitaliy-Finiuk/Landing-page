@@ -6,8 +6,6 @@
   flex-direction: column;
   align-items: center;
 
-  &__logo {
-  }
   &__text {
     font-weight: 300;
     font-size: 18px;
@@ -33,18 +31,12 @@
 .container {
   padding: 24px 12px 0px;
 }
-.menu-icon {
-}
+
 .menu {
   font-weight: 300;
   font-size: 18px;
   line-height: 21px;
   cursor: pointer;
-}
-.menu-body {
-}
-
-.menu_body._active {
 }
 .menu-list {
   &__item {
@@ -65,8 +57,6 @@
     line-height: 21px;
   }
 
-  &__image {
-  }
 }
 .header {
   &__button {
