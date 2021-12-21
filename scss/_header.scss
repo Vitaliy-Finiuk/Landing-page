@@ -5,7 +5,6 @@
   display: flex;
   flex-direction: column;
   align-items: center;
-
   &__text {
     font-weight: 300;
     font-size: 18px;
@@ -16,22 +15,21 @@
 .header-title {
   &__main {
     font-weight: 600;
-    font-size: 48px;
-    line-height: 54px;
+    font-size: 35px;
+    line-height: 44px;
   }
 
   &__secondary {
     margin: 0px;
     font-weight: bold;
-    font-size: 72px;
-    line-height: 82px;
+    font-size: 48px;
+    line-height: 62px;
   }
 }
 
 .container {
   padding: 24px 12px 0px;
 }
-
 .menu {
   font-weight: 300;
   font-size: 18px;
@@ -40,6 +38,7 @@
 }
 .menu-list {
   &__item {
+    padding-top: 15px;
     list-style-type: none;
   }
 }
@@ -47,16 +46,18 @@
 .header-content {
   align-items: center;
   &__text {
+    font-weight: 300;
+    font-size: 18px;
+    line-height: 21px;
     display: flex;
     flex-direction: column;
     align-items: center;
     text-align: center;
-    margin-bottom: 35px;
-    font-weight: 300;
-    font-size: 18px;
-    line-height: 21px;
   }
 
+  &__image{
+    padding-top: 50px;
+  }
 }
 .header {
   &__button {
@@ -81,41 +82,6 @@
 .img {
   height: auto;
   width: 100%;
-}
-
-@media (max-width: 767px) {
-  .menu-icon {
-    right: 25px;
-    top: 10px;
-    z-index: 5;
-    display: block;
-    position: fixed;
-    cursor: pointer;
-    &__line {
-      width: 35px;
-      height: 5px;
-      background-color: #00c1ec;
-      margin: 6px 0;
-      transition: 0.4s;
-    }
-  }
-
-  .menu-body {
-    display: flex;
-    flex-direction: column;
-    position: fixed;
-    top: 0;
-    right: 0;
-    height: 100%;
-    width: 100%;
-    transform: translate(-100%, 0px);
-    background-color: #696664;
-    transition: left 0.3s ease 0s;
-  }
-
-  .menu_body._active {
-    transform: translate(0px, 0px);
-  }
 }
 
 @media (min-width: 767px) {
@@ -144,7 +110,7 @@
   .header-content {
     display: flex;
     &__text {
-      flex: 350px;
+      flex: 0.2 0 430px;
       align-items: flex-start;
       text-align: left;
     }
@@ -152,6 +118,21 @@
     &__image {
       align-self: flex-end;
       flex: 1 0 auto;
+    }
+  }
+
+  .header-title {
+    &__main {
+      font-weight: 600;
+      font-size: 48px;
+      line-height: 54px;
+    }
+  
+    &__secondary {
+      margin: 0px;
+      font-weight: bold;
+      font-size: 72px;
+      line-height: 82px;
     }
   }
 }
