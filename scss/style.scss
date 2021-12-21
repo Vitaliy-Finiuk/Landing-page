@@ -3,19 +3,18 @@
 @import "_footer";
 @import "_mainSlider";
 
+
+
 .container {
     max-width: 1170px;
-    margin: auto;
+    margin: 0 auto;
 }
 
 body{
     
-    --main-font: "Arodora Pro";
-    --secondary-font: "NEXT ART";
     
     background-color: #2C2C2C;
     color: #E4E4E4;
-    font-family: var(--secondary-font);
     margin: 0px;
     a {
         color: #E4E4E4;

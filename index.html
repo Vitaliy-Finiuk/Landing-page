@@ -13,32 +13,82 @@
 </head>
 
 <body>
-    <div class=" home-bg">
-        <header>
+    <div class="header-bg">
+        <header class="container">
+            <div class="header">
+            <div class="header__logo">
+                <img src="Image/Header/Logo.svg" alt="logo" />
+            </div>
+            <div class="menu-icon">
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+                <div class="menu-icon__line"></div>
+                <span></span>
+            </div>
+            <nav class="menu menu-body">
+                <ul class="menu-list">
+                    <li class="menu-list__item" >
+                        <a  href="#">Home</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">About me</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Portfolio</a>
+                    </li>
+                    <li class="menu-list__item">
+                        <a href="#">Contact</a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+            <div class="header-content">
+                <div class="header-content__text">
+                    <div class="header-title">
+                        <h2 class="header-title__main" >Hello</h2>
+                        <h1 class="header-title__secondary">I’m Gleb Kostrubov</h1>
+                    </div>
+
+                    <div class="header__text">
+                        <p>
+                            I've been doing web design, front-end and back-end development
+                            for a year now. Do you need a website design, site layout, or
+                            maybe a turnkey website? Then contact me
+                        </p>
+                    </div>
+
+                    <button class="header__button button">Contact me</button>
+                </div>
+                <div class="header-content__image">
+                    <img class="img" src="Image/Header/Gleb.png" max-width = "632px"
+                    height = "674px" alt="Gleb" />
+                </div>
+            </div>
+        </header>
+
+        <!-- <header>
             <div class="home container">
-                <div class="menu_icon">
+                <div class="menu-icon">
                     <div class="bar1"></div>
                     <div class="bar2"></div>
                     <div class="bar3"></div>
                     <span></span>
                 </div>
-                <nav class="home-header menu_body">
-
-                    <div class="home-header__logo">
-                        <img src="Image/About/07.svg" alt="logo" />
-                        <div class="home-header__text">Notitanic</div>
-                    </div>
+                <div class="home-header__logo">
+                    <img src="Image/Header/Logo.svg" alt="logo" />
+                </div>
+                <nav class="home-header menu-body">
                     <ul class="home-header__menu">
-                        <li class="menu__link">
+                        <li class="menu-link">
                             <a href="#">Home</a>
                         </li>
-                        <li class="menu__link">
+                        <li class="menu-link">
                             <a href="#">About me</a>
                         </li>
-                        <li class="menu__link">
+                        <li class="menu-link">
                             <a href="#">Portfolio</a>
                         </li>
-                        <li class="menu__link">
+                        <li class="menu-link">
                             <a href="#">Contact</a>
                         </li>
                     </ul>
@@ -65,7 +115,9 @@
                     </div>
                 </div>
             </div>
-        </header>
+        </header> -->
+        
+
     </div>
     <main class="main">
         <div class="about container">
@@ -256,8 +308,7 @@
         </div>
 
         <div class="home-header__logo footer-helper">
-            <img src="Image/About/07.svg" alt="logo" />
-            <div class="home-header__text">Notitanic</div>
+            <img src="Image/Header/Logo.svg" alt="logo" />
             <p>Copyright © 2021, Notitanic</p>
         </div>
     </footer>
