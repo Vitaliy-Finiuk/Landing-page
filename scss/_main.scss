@@ -1,13 +1,5 @@
-main {
-  font-family: var(--main-font);
-}
-
 .home-bg {
   background: linear-gradient(101.56deg, #2c2c2c 1.56%, #1c1c1c 95.55%);
-}
-
-.about {
-  font-family: var(--main-font);
 }
 .about-item {
   display: flex;
@@ -24,10 +16,10 @@ main {
     box-shadow: 0px 4px 6px rgba(0, 0, 0, 0.47);
     border: none;
     transition: background-color 100ms ease-in-out;
+    font-family: $font-main;
     font-size: 16px;
     font-weight: 300;
     line-height: 25px;
-    font-family: var(--main-font);
     color: #e4e4e4;
     cursor: pointer;
 
@@ -42,28 +34,6 @@ main {
   }
 }
 
-.about-img {
-  border-radius: 14px;
-}
-.about-main {
-  &__text {
-  }
-}
-.main {
-  &__text-title {
-    display: flex;
-    padding-left: 22px;
-    font-size: 48px;
-    line-height: 54px;
-  }
-
-  &__text-secondary {
-    font-weight: 300;
-    font-size: 20px;
-    line-height: 24px;
-  }
-}
-
 .about-main {
   text-align: center;
   display: flex;
@@ -71,15 +41,27 @@ main {
   justify-content: center;
   padding: 30px 20px;
 
+  &__image {
+    display: none;
+  }
+
   &__text {
     flex: 1 0 350px;
   }
 
-  &__gleb {
-    justify-content: space-around;
+  &__title {
+    display: flex;
+    font-family: $font-secondary;
+    padding-left: 22px;
+    font-size: 48px;
+    line-height: 54px;
   }
-  &__image {
-    display: none;
+
+  &__secondary {
+    font-family: $font-main;
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
   }
 }
 
@@ -92,25 +74,20 @@ main {
       line-height: 29px;
     }
   }
-
-
+  .about-img {
+    min-width: 200px;
+  }
   .about-main {
     margin: 150px;
     flex-wrap: nowrap;
     align-items: center;
-    
+
     &__image {
       display: flex;
       height: 1000px;
       flex-direction: column;
       justify-content: space-around;
       align-items: flex-end;
-    }
-    
-    &__text {
-    }
-
-    &__image2 {
     }
   }
 }

@@ -1,24 +1,21 @@
 .footer {
-    position: static;
+    font-family: $font-main;
     font-weight: 300;
     font-size: 18px;
     line-height: 21px;
     flex: 1 1 auto;
 }
 .footer-menu {
-
+    &__item {
+        list-style-type: none;
+        padding-top: 15px;
+    }
 }
-.footer-helper{
-    flex: 0 1 auto;
-}
-.menu {
-
-		&__link {
-            margin: 18px;
-		}
-}
-.contacts-links{
+.contacts-links {
     margin: 18px 56px;
+}
+.footer-logo {
+    text-align: center;
 }
 
 @media (min-width: 767px) {
@@ -26,4 +23,8 @@
         display: flex;
         justify-content: space-between;
     }
+}
+
+.footer-logo {
+    align-self: center;
 }

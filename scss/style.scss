@@ -1,23 +1,5 @@
+@import "base";
 @import "_header";
 @import "_main";
 @import "_footer";
 @import "_mainSlider";
-
-
-
-.container {
-    max-width: 1170px;
-    margin: 0 auto;
-}
-
-body{
-    
-    
-    background-color: #2C2C2C;
-    color: #E4E4E4;
-    margin: 0px;
-    a {
-        color: #E4E4E4;
-        text-decoration: none;
-    }
-}

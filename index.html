@@ -16,40 +16,34 @@
     <div class="header-bg">
         <header class="container">
             <div class="header">
-            <div class="header__logo">
-                <img src="Image/Header/Logo.svg" alt="logo" />
+                <div class="header__logo">
+                    <img src="Image/Header/Logo.svg" alt="logo" />
+                </div>
+                <nav class="menu menu-body">
+                    <ul class="menu-list">
+                        <li class="menu-list__item">
+                            <a href="#">Home</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">About me</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">Portfolio</a>
+                        </li>
+                        <li class="menu-list__item">
+                            <a href="#">Contact</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div class="menu-icon">
-                <div class="menu-icon__line"></div>
-                <div class="menu-icon__line"></div>
-                <div class="menu-icon__line"></div>
-                <span></span>
-            </div>
-            <nav class="menu menu-body">
-                <ul class="menu-list">
-                    <li class="menu-list__item" >
-                        <a  href="#">Home</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#">About me</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#">Portfolio</a>
-                    </li>
-                    <li class="menu-list__item">
-                        <a href="#">Contact</a>
-                    </li>
-                </ul>
-            </nav>
-        </div>
             <div class="header-content">
                 <div class="header-content__text">
                     <div class="header-title">
-                        <h2 class="header-title__main" >Hello</h2>
+                        <h2 class="header-title__main">Hello</h2>
                         <h1 class="header-title__secondary">I’m Gleb Kostrubov</h1>
                     </div>
 
-                    <div class="header__text">
+                    <div class="header-text__secondary">
                         <p>
                             I've been doing web design, front-end and back-end development
                             for a year now. Do you need a website design, site layout, or
@@ -57,11 +51,10 @@
                         </p>
                     </div>
 
-                    <button class="header__button button">Contact me</button>
+                    <button class="header-content__button button">Contact me</button>
                 </div>
                 <div class="header-content__image">
-                    <img class="img" src="Image/Header/Gleb.png" max-width = "632px"
-                    height = "674px" alt="Gleb" />
+                    <img class="img" src="Image/Header/Gleb.png" max-width="632px" height="674px" alt="Gleb" />
                 </div>
             </div>
         </header>
@@ -103,12 +96,12 @@
         <div class="container about-bg">
             <div class="about-main">
                 <div class="about-main__image">
-                    <img src="Image/About/gleb1.png" class="about-img" width="272px" height="320px" alt="">
-                    <img src="Image/About/gleb2.png" class="about-img" width="250px" ; height="280px" alt="">
+                    <img src="Image/About/gleb1.png" class="about-img img" width="272px" height="320px" alt="">
+                    <img src="Image/About/gleb2.png" class="about-img img" width="250px" height="280px" alt="">
                 </div>
                 <div class="about-main__text">
-                    <h2 class="main__text-title" >About ME</h2>
-                    <p class="main__text-secondary">
+                    <h2 class="about-main__title">About ME</h2>
+                    <p class="about-main__secondary">
                         Hello again everyone! So, you already know that my name is Gleb. A little about myself: student,
                         18 y.o., athlete-football player, I love creativity since childhood, I live in Donetsk, Ukraine.
                         Why programming? Everything is elementary - I like it, the profession of the future, thanks to
@@ -122,8 +115,8 @@
                         If you are interested in me , you want to know something more or use my services, then I will
                         provide all my contacts below.</p>
                 </div>
-                <div class="about-main__image2">
-                    <img src="Image/About/gleb3.png" class="about-img" max-width="287px" height="427px" alt="">
+                <div>
+                    <img src="Image/About/gleb3.png" class="about-img img" max-width="287px" height="427px" alt="">
                 </div>
             </div>
         </div>
@@ -133,7 +126,7 @@
                 <div class="swiper-container swiper main-slider">
                     <div class="swiper-wrapper main-slider__item">
                         <div class="swiper-slide">
-                            <img class="main-slider__image swiper-lazy" data-src="Image/image 4.jpg"
+                            <img class="main-slider__image swiper-lazy" data-src="Image/Header/image 4.jpg"
                                 src="Image/About/1x1.png" alt="">
                             <div class="swiper-lazy-preloader"></div>
                             <div class="main-slider__content">
@@ -160,7 +153,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="main-slider__image swiper-lazy " data-src="Image/image 4.jpg"
+                            <img class="main-slider__image swiper-lazy " src="Image/Header/image 4.jpg"
                                 src="Image/About/1x1.png" alt="">
                             <div class="swiper-lazy-preloader"></div>
                             <div class="main-slider__content">
@@ -187,7 +180,7 @@
                             </div>
                         </div>
                         <div class="swiper-slide">
-                            <img class="main-slider__image swiper-lazy" data-src="Image/image 4.jpg"
+                            <img class="main-slider__image swiper-lazy" data-src="Image/Header/image 4.jpg"
                                 src="Image/About/1x1.png" alt="">
                             <div class="swiper-lazy-preloader"></div>
                             <div class="main-slider__content">
@@ -225,24 +218,24 @@
         </div>
     </main>
     <footer class="footer container">
-        <nav class="footer-menu footer-helper">
-            <ul class="footer-menu__secondary">
-                <li class="menu__link">
+        <nav class="footer-menu menu">
+            <ul class="footer-menu__list">
+                <li class="footer-menu__item">
                     <a href="#">Home</a>
                 </li>
-                <li class="menu__link">
+                <li class="footer-menu__item">
                     <a href="#">About me</a>
                 </li>
-                <li class="menu__link">
+                <li class="footer-menu__item">
                     <a href="#">Portfolio</a>
                 </li>
-                <li class="menu__link">
+                <li class="footer-menu__item">
                     <a href="#">Contact</a>
                 </li>
             </ul>
         </nav>
 
-        <div class="footer-contacts footer-helper">
+        <div class="footer-contacts">
             <h3>
                 Contact:
             </h3>
@@ -254,8 +247,8 @@
             <div class="footer-contacts__number contacts-links">Calls: +7 (900) - 121 - 54 -54</div>
         </div>
 
-        <div class="home-header__logo footer-helper">
-            <img src="Image/Header/Logo.svg" alt="logo" />
+        <div class="footer-logo">
+            <img src="Image/Header/Logo.svg" alt="Notitanic" />
             <p>Copyright © 2021, Notitanic</p>
         </div>
     </footer>
