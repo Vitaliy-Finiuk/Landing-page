@@ -34,6 +34,29 @@
   }
 }
 
+.about-img {
+  min-width: 200px;
+  border-radius: 14px;
+}
+.about-main {
+  &__text {
+  }
+}
+.main {
+  &__text-title {
+    display: flex;
+    padding-left: 22px;
+    font-size: 48px;
+    line-height: 54px;
+  }
+
+  &__text-secondary {
+    font-weight: 300;
+    font-size: 20px;
+    line-height: 24px;
+  }
+}
+
 .about-main {
   text-align: center;
   display: flex;
@@ -46,7 +69,7 @@
   }
 
   &__text {
-    flex: 1 0 350px;
+    flex: 1 0.2 350px;
   }
 
   &__title {
@@ -81,6 +104,10 @@
     margin: 150px;
     flex-wrap: nowrap;
     align-items: center;
+    
+    &__text {
+      flex: 1 0 350px;
+    }
 
     &__image {
       display: flex;
